@@ -16,7 +16,7 @@ if (mysqli_query($conn, $sql)) {
 } else {
   echo "" . mysqli_error($conn);
 }
-
+//uwu
 mysqli_close($conn);
 ?>
 <body>
