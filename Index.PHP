@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Coffe Time</title>
-      <link rel="stylesheet" type="text/css" href="estilos.css">
+      <link rel="stylesheet" type="text/css" href="estilos.css" >
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
       </head>
       <?php
 include("conexion.php");
@@ -20,9 +21,17 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 ?>
 <body>
-<h1>Bienvenido a Coffe Time
-    <a style="float:right" href="iniciar_sesion.html">Registrarse</a>
-</h1>
+  <div class="navbar_index">
+<h1>Coffe Time </h1>
+<div>
+    <a href="iniciar_sesion.html" class="boton_reg">Registrarse</a>
+    <!--añadir link cesta-->
+    <div class="cesta">
+      <i class="ri-shopping-basket-2-line"></i>
+      Cesta
+</div>
+</div>
+</div>
 <div class="productos">
   <div class="producto">
     <img src="cafe1.jpg.jfif" alt="Producto 1">
@@ -37,17 +46,18 @@ mysqli_close($conn);
     <p>Cafe Peruano-Los Angeles</p>
   </div>
   <div class="producto">
-    <img src="cafe4.jpg" alt="Producto 4">
-    <p>Cafe de Kibira-Burundi</p>
-  </div>
-  <div class="producto">
     <img src="cafe5.jpg" alt="Producto 5">
     <p>Cafe mejicano-El Mariachi</p>
   </div>
+  <div class="producto">
+    <img src="cafe4.jpg" alt="Producto 4">
+    <p>Cafe de Kibira-Burundi</p>
+  </div>
+  
 </div>
 
 </body>
 
 </html>
 
-/* https://anvaka.github.io/city-roads/?q=Cajamarca&areaId=3601896111 */
+<!-- https://anvaka.github.io/city-roads/?q=Cajamarca&areaId=3601896111 

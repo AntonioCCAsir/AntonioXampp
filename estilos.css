@@ -4,18 +4,67 @@ body {
     padding: 0;
     background-color: #85674c;
   }
-  
-  h1 {
-    text-align: center;
-    background-color: #fdd19c; /* Cambiar color #85674c(OSCURO) #fdd19c(CLARO) */
-    padding-bottom: 10px; /* Espaciado para separar el texto */
-  }
 
-  h1 a {
-    font-size: 18px; /* Ajusta el tamaño */
-    text-decoration: none; /* Quita la subrayado del enlace */
-    }
+  .navbar_index{
+    background-color: #fdd19c;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18PX;
+}
+
+.navbar_index h1 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.navbar_index a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.navbar_index a:hover {
+  color: #85674c;
+}
+
+.navbar_index a.boton_reg {
+  background-color: #e0a663;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar_index a.boton_reg:hover {
+  background-color: #947a5b;
+}
   
+.cesta {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -150px; /* Ajusta según sea necesario */
+  margin-top: -34px;
+  color: white;
+  text-decoration: none;
+  background-color: #85674c; /* Color de fondo */
+  border: 2px solid #fdd19c; /* Borde con color */
+  padding: 5px; /* Espaciado interno */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+.cesta i {
+  margin-right: 5px;
+  font-size: 32px;
+}
+
   .productos {
     display: flex;
     justify-content: space-around;
@@ -44,8 +93,41 @@ body {
     margin-top: 8px;
     font-size: 14px;
   }
+/*A partir de aqui son estilos pra el iniciar_sesion*/
 
+  .body_reg {
+    background-color: #fdd19c;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+.navbar_reg {
+    background-color: #85674c;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.boton_volver {
+    float: left;
+    margin-right: 20px;
+    background-color: #a07c5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton_volver:hover {
+    background-color: #a78c75;
+}
+
+.contenido {
+    text-align: center;
+    margin-top: 50px;
+}
 
 
 
