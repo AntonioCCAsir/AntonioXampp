@@ -32,7 +32,7 @@ body {
   color: #85674c;
 }
 
-.navbar_index a.boton_reg {
+.navbar_index a {
   background-color: #e0a663;
   color: white;
   padding: 10px 20px;
@@ -42,27 +42,8 @@ body {
   text-decoration: none;
 }
 
-.navbar_index a.boton_reg:hover {
+.navbar_index a {
   background-color: #947a5b;
-}
-  
-.cesta {
-  display: flex;
-  align-items: center;
-  position: relative;
-  left: -150px; /* Ajusta según sea necesario */
-  margin-top: -34px;
-  color: white;
-  text-decoration: none;
-  background-color: #85674c; /* Color de fondo */
-  border: 2px solid #fdd19c; /* Borde con color */
-  padding: 5px; /* Espaciado interno */
-  border-radius: 5px; /* Borde redondeado */
-}
-
-.cesta i {
-  margin-right: 5px;
-  font-size: 32px;
 }
 
   .productos {
@@ -93,7 +74,7 @@ body {
     margin-top: 8px;
     font-size: 14px;
   }
-/*A partir de aqui son estilos pra el iniciar_sesion*/
+/*A partir de aqui son estilos pra el Index.PHP*/
 
   .body_reg {
     background-color: #fdd19c;
@@ -127,17 +108,155 @@ body {
 .contenido {
     text-align: center;
     margin-top: 50px;
+
+}
+.botonRobot {
+  transform: scale(2);
+  margin-bottom: 28px;
+}
+
+/*Modificar Cafe*/
+
+.barraNav {
+  background-color: #fdd19c;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.cafe {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
 }
 
 
+.barraNav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: -50px;
+  font-size: 18px;
+}
 
+.barraNav a:hover {
+  color: #85674c;
+}
 
+.barraNav .boton_volver {
+  
+  background-color: #a07c5d;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-left: 20px;
+   margin-right: 0;
+   margin-top: -60px;
 
+}
 
+.barraNav .boton_volver:hover {
+  background-color: #a78c75;
+}
 
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
 
+form {
+  display: inline-block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 60%; /* Ajusta el ancho del formulario según sea necesario */
+  margin: auto; /* Centra el formulario */
+}
 
-    
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
 
+select {
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
+button {
+  background-color: #947a5b;
+}
+ button:hover {
+  background-color: #85674c;
+}
 
+/*Estilo boton confirmarReg.php */
+
+.enlace-continuar {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #947a5b;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.enlace-continuar:hover {
+  background-color: #fdd19c;
+ 
+color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*Estilo de consulta.php */
+
+.body_estadisticas {
+  background-color: #fdd19c;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar_estadisticas {
+  background-color: #85674c;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.boton_volver_estadisticas {
+  float: left;
+  margin-right: 20px;
+  background-color: #a07c5d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.boton_volver_estadisticas:hover {
+  background-color: #a78c75;
+}
+
+.contenido_estadisticas {
+  text-align: center;
+  margin-top: 50px;
+}
